@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="/index.css">
+    <!-- font aswome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <link rel="stylesheet" href="/index.js">
+</head>
+
+<body>
+
+    <section>
+        <div class="head-nav">
+
+            <ul>
+                <li class="active"> <i class="fa-solid fa-mobile-screen"></i>Get App</li>
+                <li class="active"><i class="fa-solid fa-location-dot"></i>Store & Events</li>
+                <li class="active"><i class="fa-solid fa-gift"></i>Gift cards</li>
+                <li> <i class="fa-solid fa-question"></i>Help</li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="logo">Nattapatta</div>
+            <div class="menu">
+                <ul>
+                    <li>Categories</li>
+                    <li>Brands</li>
+                    <li>Luxe</li>
+                    <li>Beauty Advice</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <form action="#">
+                    <input type="text" placeholder="Search on ColorBar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <div class="butns">
+                <button>Get Free Product</button>
+            </div>
+            <i class="fa-solid fa-bars icon-bar" onclick="openMobileMenu()"></i>
+        </div>
+        <div class="mobile-menu">
+            <div class=" x-icons">
+                <i class="fa-solid fa-xmark icon-x" onclick="closeMobileMenu()"></i>
+            </div>
+
+            <ul>
+                <li>Categories</li>
+                <li>Brands</li>
+                <li>Luxe</li>
+                <li>Beauty Advice</li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <ul>
+                <li>Makeup</li>
+                <li>Skin</li>
+                <li>Hair</li>
+                <li>Bath & Body</li>
+                <li>Appliances</li>
+                <li>Natural</li>
+                <li>Mom & Baby</li>
+                <li>Health & Wellness</li>
+                <li>Men</li>
+                <li>Fragrance</li>
+                <li>Pop Ups</li>
+
+            </ul>
+            <button>Offers</button>
+
+
+
+        </div>
+    </section>
+    <script>
+        // Function to open the mobile menu
+        function openMobileMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.style.display = 'block';
+        }
+
+        // Function to close the mobile menu
+        function closeMobileMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.style.display = 'none';
+        }
+
+
+        // // Get the necessary elements
+        // const menuToggle = document.querySelector('.navbar .icon-bar');
+        // const menuClose = document.querySelector('.icon-x');
+        // const mobileMenu = document.querySelector('.mobile-menu');
+
+        // // Function to open the mobile menu
+        // function openMobileMenu() {
+        //     mobileMenu.style.display = 'block';
+        // }
+
+        // // Function to close the mobile menu
+        // function closeMobileMenu() {
+        //     mobileMenu.style.display = 'none';
+        // }
+
+        // // Add click event listeners to the menu toggle and close icons
+        // menuToggle.addEventListener('click', openMobileMenu);
+        // menuClose.addEventListener('click', closeMobileMenu);
+
+    </script>
+</body>
+
+</html>
